@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+         <servlet>
+         
+         <servlet-name>InsertFeedbackServlet</servlet-name>
+         <servlet-class>Feedbackpackage.InsertFeedbackServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         <servlet-name>InsertFeedbackServlet</servlet-name>
+         <url-pattern>/FeedbackServlet</url-pattern>
+         </servlet-mapping>
+         
+                
+         <servlet>
+         
+         <servlet-name>FeedGetAllServlet</servlet-name>
+         <servlet-class>Feedbackpackage.FeedGetAllServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         <servlet-name>FeedGetAllServlet</servlet-name>
+         <url-pattern>/FeedGetAllServlet</url-pattern>
+         </servlet-mapping>
+         
+       
+            <servlet>
+         
+         <servlet-name>FeedbackDeleteServlet</servlet-name>
+         <servlet-class>Feedbackpackage.FeedbackDeleteServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         <servlet-name>FeedbackDeleteServlet</servlet-name>
+         <url-pattern>/FeedbackDeleteServlet</url-pattern>
+         </servlet-mapping>
+         
+         <!--User system  -->
+         
+         
+            <servlet>
+         
+         <servlet-name>UserInsertServlet</servlet-name>
+         <servlet-class>UserPackage.UserInsertServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         <servlet-name>UserInsertServlet</servlet-name>
+         <url-pattern>/UserInsertServlet</url-pattern>
+         </servlet-mapping>
+         
+         
+            
+            <servlet>
+         
+         <servlet-name>UserLoginServlet</servlet-name>
+         <servlet-class>UserPackage.UserLoginServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         <servlet-name>UserLoginServlet</servlet-name>
+         <url-pattern>/UserLoginServlet</url-pattern>
+         </servlet-mapping>
+         
+               <servlet>
+         
+         <servlet-name>ProfileServlet</servlet-name>
+         <servlet-class>UserPackage.ProfileServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         <servlet-name>ProfileServlet</servlet-name>
+         <url-pattern>/ProfileServlet</url-pattern>
+         </servlet-mapping>
+         
+              <servlet>
+         
+         <servlet-name>UpdateProfileServlet</servlet-name>
+         <servlet-class>UserPackage.UpdateProfileServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         <servlet-name>UpdateProfileServlet</servlet-name>
+         <url-pattern>/UpdateProfileServlet</url-pattern>
+         </servlet-mapping>
+         
+                 <servlet>
+         
+         <servlet-name>AccountDeleteServlet</servlet-name>
+         <servlet-class>UserPackage.AccountDeleteServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         <servlet-name>AccountDeleteServlet</servlet-name>
+         <url-pattern>/AccountDeleteServlet</url-pattern>
+         </servlet-mapping>
+         
+         </web-app>
+         
+         
